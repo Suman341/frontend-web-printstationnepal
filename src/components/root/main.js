@@ -39,7 +39,8 @@ class RootComponent extends Component {
                     <RouteRes path="/admin/products" component={ViewProducts}/>
                     <RouteRes path="/admin/category" component={ViewCategory}/>
                     <RouteRes path="/addcategory" component={AddCategory}/>
-
+                    <RouteRes path="/updatecategory/:id" component={UpdateCategory}/>
+                    <RouteRes path="/admin/profile/:id" component={AdminProfile}/>
                     <RouteRes path="/user/cart" component={MainUserCart}/>
                     <RouteRes path="/registeradmin" component={RegisterAdmin}/>
                     <RouteRes path="/admin/users" component={UserList}/>
