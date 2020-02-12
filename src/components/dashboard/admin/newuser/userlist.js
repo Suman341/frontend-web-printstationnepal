@@ -18,7 +18,13 @@ class ViewUserList extends Component{
             }
         }
     } 
-
+    componentDidMount() {
+        axios.get('http://localhost:5000/users', this.state.config)
+            .then((response) => {
+                this.setState({
+                    allusers: response.data.data
+                })
+            });
     }
 
         render(){
