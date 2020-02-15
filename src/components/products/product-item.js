@@ -67,7 +67,12 @@ class ProductRep extends React.Component {
                 }
                 return !isSelectedItem;
             });
-
+            wishList.push(product);
+            localStorage.setItem('wishlist', JSON.stringify(wishList));
+            alert("Product added to cart");
+            setTimeout(function () {
+                window.location.reload()
+            }, 1000);
 
         }
     };
